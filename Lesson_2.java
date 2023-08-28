@@ -3,9 +3,9 @@ public class Lesson_2 {
     public static void main(String[] args) {
 
     ThreeWords word = new ThreeWords();
-    word.word1 = "orange";
-    word.word2 = "banana";
-    word.word3 = "apple";
+    word.word1 = "Orange";
+    word.word2 = "Banana";
+    word.word3 = "Apple";
     word.printThreeWords();
 
     checkSumSign sum = new checkSumSign(45, -54);

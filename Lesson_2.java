@@ -1,4 +1,5 @@
 public class Lesson_2 {
+
     public static void main(String[] args) {
 
     ThreeWords word = new ThreeWords();
@@ -12,7 +13,7 @@ public class Lesson_2 {
     printColor value = new printColor(45);
 
     compareNumbers we= new compareNumbers(6, 5);
-}
+    }
 
     public static class ThreeWords {
         String word1;

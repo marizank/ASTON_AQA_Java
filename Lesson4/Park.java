@@ -11,7 +11,7 @@ public class Park {
         cost = cost2;
     }
 
-        void printInfo() {
+    void printInfo() {
         System.out.println("name:" + name + " " + "work time:" + workTime + " " + "cost:" + cost);
     }
 }

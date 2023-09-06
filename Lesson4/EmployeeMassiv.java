@@ -35,9 +35,10 @@ public class EmployeeMassiv {
             arr[3]=new EmployeeMassiv("Fort", "Doptrew", "tester","folbop@gmail.com", 3242434, 4600, 46);
             arr[4]=new EmployeeMassiv("Fol", "Topov", "tester", "gopret@gmail.com", 3445434, 405.34, 18);
 
-            for (EmployeeMassiv employeeMassiv : arr) {
-                if (employeeMassiv.age > 40)
-                    System.out.println("Employee:" + "name:" + employeeMassiv.name + " surname:" + employeeMassiv.surname + " position:" + employeeMassiv.position + " email:" + employeeMassiv.email + " phoneNumber:" + employeeMassiv.phoneNumber + " salary:" + employeeMassiv.salary + " age:" + employeeMassiv.age);
+            for (int i = 0; i < arr.length; i++){
+                if (arr[i].age>40)
+                    System.out.println("Employee:"+ "name:"+arr[i].name+" surname:"+ arr[i].surname+" position:"+arr[i].position+" email:"+arr[i].email+" phoneNumber:"+arr[i].phoneNumber+" salary:"+arr[i].salary+" age:"+arr[i].age);
             }
         }
+
 }

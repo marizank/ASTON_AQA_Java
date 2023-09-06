@@ -18,7 +18,7 @@ public class Park {
 
     class AttractionPark {
         public static void main(String[] args) {
-            Park attraction1 = new Park("train", "10.00-18.00", "5rub");
+            Park attraction1 = new Park("train", "10.00-17.00", "5rub");
             attraction1.printInfo();
             Park attraction2 = new Park("ferris wheel", "10.00-21.00", "10rub");
             attraction2.printInfo();

@@ -27,7 +27,7 @@ public class Employee {
 
     class EmployeeCreate {
         public static void main(String[] args){
-            Employee a1=new Employee("Pol","Popov", "tester", "gopret@gmail.com", 3445434, 405.34,22);
+            Employee a1=new Employee("Poll","Popov", "tester", "gopret@gmail.com", 3445434, 405.34,22);
             a1.showInfo();
         }
 

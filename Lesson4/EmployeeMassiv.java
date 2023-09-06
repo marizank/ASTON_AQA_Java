@@ -31,7 +31,7 @@ public class EmployeeMassiv {
 
             arr[0]=new EmployeeMassiv("Ron", "Redty", "AQA", "ronret@gmail.com", 12344442, 3453, 43);
             arr[1]=new EmployeeMassiv("Pol","Popov", "tester", "gopret@gmail.com", 3445434, 4054,22);
-            arr[2]=new EmployeeMassiv("Kol","Sorty", "QA", "kolsoret@gmail.com", 4625674, 3054,34);
+            arr[2]=new EmployeeMassiv("Kolll","Sorty", "QA", "kolsoret@gmail.com", 4625674, 3054,34);
             arr[3]=new EmployeeMassiv("Fort", "Doptrew", "tester","folbop@gmail.com", 3242434, 4600, 46);
             arr[4]=new EmployeeMassiv("Fol", "Topov", "tester", "gopret@gmail.com", 3445434, 405.34, 18);
 

@@ -56,7 +56,6 @@ public class Task4 {
         public int hashCode() {
             return Objects.hash(name, age, gender);
         }
-
         public static void main(String[] args) {
           System.out.println( students.stream().filter((s) -> s.getGender() == Gender.MAN). mapToInt(Student::getAge).average().getAsDouble());
           System.out.println(students.stream().filter((s)-> s.getAge() >= 18 && s.getAge() < 27 && s.getGender() == Gender.MAN).collect(Collectors.toList()));

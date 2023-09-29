@@ -5,33 +5,24 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Box<T extends Fruit> {
-    public List<T> getList() {
+class Box<B extends Fruit> {
+    public List<B> getList() {
         return list;
     }
-
-    private List<T> list;
-
-    public Box(T... obj) {
+    private List<B> list;
+    public Box(B... obj) {
         list = Arrays.asList(obj);
     }
-
     public Box() {
-        list = new ArrayList<T>();
+        list = new ArrayList<B>();
     }
-
-    void add(T obj) {
+    void add(B obj) {
         list.add(obj);
     }
-
-    void moveAt(Box<T> box) {
-//        for (T obj : list) {
-//            box.add(obj);
-//        }
+    void moveAt(Box<B> box) {
         box.getList().addAll(list);
         list.clear();
     }
-
     void info() {
         if (list.isEmpty()) {
             System.out.println("The box is empty ");
@@ -39,7 +30,6 @@ class Box<T extends Fruit> {
             System.out.println("in the box are " + list.get(0).toString() + " in quantity " + list.size());
         }
     }
-
     float getWeight() {
         if (list.isEmpty()) {
             return 0;
@@ -47,10 +37,7 @@ class Box<T extends Fruit> {
             return list.size() * list.get(0).getWeight();
         }
     }
-
     boolean compare(Box<? extends Fruit> box) {
         return this.getWeight() == box.getWeight();
     }
-
-
 }

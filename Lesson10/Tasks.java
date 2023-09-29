@@ -13,16 +13,15 @@ public class Tasks {
         orangeBox1.add(new Orange());
         orangeBox1.add(new Orange());
         orangeBox1.add(new Orange());
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             orangeBox2.add(new Orange());
         }
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             appleBox.add(new Apple());
         }
         orangeBox1.info();
         orangeBox2.info();
         appleBox.info();
-
         Float orange1Weigth = orangeBox1.getWeight();
         Float orange2Weigth = orangeBox2.getWeight();
         Float appleWeigth = appleBox.getWeight();
@@ -36,8 +35,8 @@ public class Tasks {
         orangeBox2.info();
         appleBox.info();
     }
-    private static <T> void swapElements(T[] array, int index1, int index2) {
-        T temp = array[index1];
+    private static <B> void swapElements(B[] array, int index1, int index2) {
+        B temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }

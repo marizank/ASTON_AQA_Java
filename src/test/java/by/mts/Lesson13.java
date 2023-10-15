@@ -23,7 +23,7 @@ public class Lesson13 {
     @Test
     public void findElement() {
         driver.get("https://www.mts.by/");
-        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         WebElement input = driver.findElement(By.xpath("//section/div/h2"));
         if (input.isDisplayed()) {
             System.out.println("Title in section are present");
@@ -34,7 +34,7 @@ public class Lesson13 {
     @Test
     public void findLogos() {
         driver.get("https://www.mts.by/");
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         WebElement cardVisa=driver.findElement(By.xpath("//img[@alt='Visa']"));
         WebElement cardVerifiedByVisa=driver.findElement(By.xpath("//img[@alt='Verified By Visa']"));
         WebElement cardMasterCard=driver.findElement(By.xpath("//img[@alt='MasterCard']"));
@@ -50,7 +50,7 @@ public class Lesson13 {
     @Test
     public void checkLinkMoreDetail() {
         driver.get("https://www.mts.by/");
-        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         WebElement searchLinkDetail= driver.findElement(By.xpath("//a[text()='Подробнее о сервисе']"));
         //searchLinkDetail.equals(searchLinkDetail);
         searchLinkDetail.click();
@@ -61,7 +61,7 @@ public class Lesson13 {
     @Test
     public void checkFillingOutFormAndButtonContinue(){
         driver.get("https://www.mts.by/");
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         WebElement phoneNumber=driver.findElement(By.id("connection-phone"));
         phoneNumber.sendKeys("297777777");
         WebElement sum=driver.findElement(By.id("connection-sum"));
